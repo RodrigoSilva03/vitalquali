@@ -1,8 +1,6 @@
 $(function(){
 	// Funcao resetar campos
-	$('input[type=text]').focus(function(){
-		resetarCampoInvalido($(this));
-	})
+
 	
 	$('form#form1').submit(function(e){
 		//e.preventDefault();
@@ -23,6 +21,9 @@ $(function(){
 			//console.log('Enviados')
 			alert('Formulario Enviado com Susseso').css('background-color','red');
 		}
+		$('input[type=text]').focus(function(){
+			resetarCampoInvalido($(this));
+		})
 	})// fim da funcao submit
 
 //Funcoes para estilizar o campo do formulario 

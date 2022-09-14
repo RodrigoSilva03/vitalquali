@@ -4,15 +4,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@100&family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet"/> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css"/>
-
 	<link rel="shortcut icon" type="image-x/png" href="img/icone.ICO">
 	<title>VITALQUALI</title>
 </head>
 <body>
+	<a id="top" href=""></a> 
 	<header>
 	<main>
 	<div class="container">
@@ -21,7 +20,7 @@
 				<li><a href="">HOME</a></li>
 				<li><a href="#sobre_">SOBRE</a></li>
 				<li><a href="#servico">SERVIÇOS</a></li>
-				<li><a href="#contato">CONTATO</a></li>
+				<li><a href="#contato_">CONTATO</a></li>
 			</ul>
 		</nav><!--desktop-->
 
@@ -30,12 +29,11 @@
 				<li><a href="">HOME</a></li>
 				<li><a href="#sobre_">SOBRE</a></li>
 				<li><a href="#servico">SERVIÇOS</a></li>
-				<li><a href="#contato">CONTATO</a></li>
+				<li><a href="#contato_">CONTATO</a></li>
 			</ul>
 		</nav><!--mobile-menu-->
 		<div class="clear"></div><!--clear-->
 	</div><!--container-->
-
 		<section class="video">
 			<video style="width:100%;" autoplay muted loop>
 			<source src="img/video.mp4" type="video/mp4">
@@ -49,10 +47,10 @@
 		</section><!--video-->
 	</main>
 	</header>
-
-	<section id="sobre_" class="sessao1">
+	<section class="sessao1">
 		<div class="container">
 			<div class="texto-sessao1">
+			<div id="sobre_"class="sobre_"></div>
 				<div class="banner">
 					<h2>Planos de Saúde</h2>
 					<p>- SulAmérica Saúde</p>
@@ -85,7 +83,6 @@
 					<p>- Mapfre</p>
 					<p>- Bradesco Saúde</p>
 				</div><!--banner-->
-				
 				<div class="clear"></div>
 			</div><!--texto-sessao1-->
 			<div class="device-sessao1">
@@ -95,8 +92,8 @@
 		</div><!--container-->
 	</section><!--sessao1-->
 
-	<section id="servico" class="sessao2">
-	<div class="container">
+	<section class="sessao2">
+	<div id="servico" class="container">
 		<h1>Serviços</h1>
 		<div class="box-sessao2">
 			<div class="box-single-sessao2">
@@ -109,19 +106,19 @@
 			<div class="box-single-sessao2">
 				<h2>Seguro RCP</h2>
 				<p style="text-align:center;">Seguro Responsabilidade Civil Profissional</p>
-				<p>* Medicos</p>
+				<p>* Médicos</p>
 				<p>* Dentistas<p>
 				<p>* Advogados</p>
-				<p style="text-align:center;font-family:Verdana;font-size: 17px;"> Beneficios</p>
+				<p style="text-align:center;font-family:Verdana;font-size: 17px;"> Benefícios</p>
 				<p>* Custos de defesa</p>
 				<p>* Cobertura para danos morais</p>
-				<p>* Indenização para danos á terceiros, muito mais</p>
+				<p>* Indenização para danos a terceiros, muito mais</p>
 			</div><!--box-single-sessao2-->
 
 			<div class="box-single-sessao2">
 				<h2>Seguro DIT</h2>
-				<p style="text-align:center;">Diária por incapacidade temporaria</p>
-				<p>* LER: lesão por esforço repetetivo</p>
+				<p style="text-align:center;">Diária por Incapacidade Temporária</p>
+				<p>* LER: lesão por esforço repetitivo</p>
 				<p>* Doenças graves</p>
 				<p>* Se estiver Impossibilitado de trabalhar</p>
 			</div><!--box-single-sessao2-->
@@ -130,19 +127,20 @@
 	</div><!--container-->
 </section><!--sessao2-->
 
-<section id="contato" class="sessao3">
+<section class="sessao3">
 	<div class="container">
-		<!-- <a id="contatof"></a> -->
 		<div id="contato" class="form">
 			<h2>Entre em contato para mais informações</h2>
-			 <form action="https://formsubmit.co/rd966938@gmail.com" method="POST" id="form1">
-				<input type="text" name="nome" placeholder="Nome:" required>
-				<input type="text" name="telefone" placeholder="Telefone:"required>
+			<div  id="contato_" class="contato_"></div>
+			<!-----------------------------------email que vai receber os dados-------->
+			 <form action="https://formsubmit.co/planosdesaude@vitalqualiseguros.com" method="POST" id="form1">
+				<input type="text" name="nome" placeholder="Nome completo:" required>
+				<input type="text" name="telefone" placeholder="(xx)xxxxx-xxxx"required>
 				<input type="text" name="email" placeholder="E-mail:"required>
 				<input type="hidden" name="_captcha" value="false"/>
 				<textarea name="mensagem" placeholder="Mensagem:"></textarea>
 				<div class="clear"></div>
-				<!-- <input type="hidden" name="_next" value="https://rodrigosilva03.github.io/Piloto/"/> -->
+				<input type="hidden" name="_next" value=" URL DO SITE AQUI "/><!--EX: value=" URL DO SITE PARA RETORNO DO FORMULARIO PÓS ENVIO " -->
 				<div><input type="submit" name="acao" value="Enviar"/></div>
 			</form>
 		</div><!--form-->
@@ -209,18 +207,17 @@
 		<h2>Endereço</h2>
 		<p>Av. Darcy Vieira, N° 1958, Jardim Itália - Itapetininga/SP</p>
 	</div><!--inform-->
+	<a href="#top"><img src="img/seta.png"/></a>
 <div class="clear"></div>
 </div><!--info-contato-->
 
 <footer>
 	<div class="container">
-	<p>Todos os direitos reservados</p>
-	<p>Vitalquali Corretora de Seguros</p>
-	<div class="clear"></div>
-	<!-- <p>&reg; Rodrigo da Silva</p> -->
+		<p>Todos os direitos reservados</p>
+		<p>Vitalquali Corretora de Seguros</p>
+		<div class="clear"></div>
 	</div><!--container-->
 </footer>
-<!-- Incluindo Google maps em Js -->
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/formJs.js"></script>
 <script src="js/menu_responsivo.js"></script>

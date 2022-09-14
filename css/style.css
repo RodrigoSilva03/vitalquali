@@ -285,6 +285,12 @@ section.diferenciais > .container > h2{
 	background-color:rgb(120,120,120,0.10);
 	padding:10px;
 }
+.info-contato img{
+	width: 30px;
+	height: 30px;
+	float: right;
+	cursor: pointer;
+}
 .info-contato .inform{
 	float: left;
 	width: 33.3%;
@@ -293,6 +299,7 @@ section.diferenciais > .container > h2{
 .inform h2{
 	color:#191970;
 	margin-bottom: 8px;
+	font-family: Arial;
 }
 .inform p{
 	color:black;
