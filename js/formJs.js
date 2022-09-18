@@ -1,6 +1,8 @@
 $(function(){
-	// Funcao resetar campos
-
+	// resetar campos
+	$('input[type=text]').focus(function(){
+		resetarCampoInvalido($(this));
+	})
 	
 	$('form#form1').submit(function(e){
 		//e.preventDefault();
@@ -18,15 +20,11 @@ $(function(){
 			aplicarCampoInvalido($('input[name=email]'));
 			return false;
 		}else{
-			//console.log('Enviados')
-			alert('Formulario Enviado com Susseso').css('background-color','red');
+			alert('Formulário Enviado com Susseso!');
 		}
-		$('input[type=text]').focus(function(){
-			resetarCampoInvalido($(this));
-		})
-	})// fim da funcao submit
+	})
 
-//Funcoes para estilizar o campo do formulario 
+	//Funcoes para estilizar o campo do formulario 
 	function aplicarCampoInvalido(el){
 			el.css('color','red');
 			el.css('border','2px solid red');
@@ -40,7 +38,7 @@ $(function(){
 			el.val('');
 	}
 
-//Funcoes para verificar nossos campos
+		//funcoes para verificar nossos campos
 		function verificarNome(nome){
 		if(nome == ''){
 			return false;
@@ -51,13 +49,13 @@ $(function(){
 			for(var i = 0; i < amount; i++){
 				if(splitStr[i].match(/^[A-z]{1}[a-z]{1,}$/)){
 				}else{
-			//		aplicarCampoInvalido($('input[name=nome]'));
+					//aplicarCampoInvalido($('input[name=nome]'));
 					return false;
 				}
 			}
 		}else{
 			//aplicarCampoInvalido($('input[name=nome]'));
-			console.log('Não bate com a condição Nome Completo');
+			console.log('Campo Invalido!');
 			return false;
 		}
 	}
